@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+
+    background: linear-gradient(#000000, #8A2ECC);
+
+    color: white;
+    font-size: 150px;
+    font-family: 'Yu Gothic', 'HelveticaNeue-UltraLight', sans-serif;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
