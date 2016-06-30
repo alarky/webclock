@@ -13,6 +13,7 @@ $(document).ready(function() {
     update();
     setInterval(update, 1000);
 
+    /*
     // canvas
     var canvas = document.createElement("canvas");
     //canvas.width = window.innerWidth / window.devicePixelRatio;
@@ -24,4 +25,5 @@ $(document).ready(function() {
     var context = canvas.getContext("2d");
 
     context.fillRect(0, 0, canvas.width, canvas.height);
+    */
 });

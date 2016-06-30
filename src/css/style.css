@@ -5,8 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    /*background: linear-gradient(#000000, #8A2ECC);*/
-    background-color: gray;
+    background: linear-gradient(#000000, #50514f);
     color: white;
     font-family: 'Yu Gothic', 'HelveticaNeue-UltraLight', sans-serif;
 }
