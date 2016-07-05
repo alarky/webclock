@@ -1,3 +1,6 @@
+
+var $ = require("jquery");
+
 $(document).ready(function() {
     // clock
     function fmt02(num) {
