@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var del = require("del");
 var browserify = require("browserify");
-var source = require('vinyl-source-stream');
+var source = require("vinyl-source-stream");
 
 gulp.task("clean", function(callback) {
     del("dest", callback);

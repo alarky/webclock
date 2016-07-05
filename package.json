@@ -9,6 +9,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "mithril": "^0.2.5"
   }
 }
