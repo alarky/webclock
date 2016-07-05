@@ -6,26 +6,26 @@ var browserify = require("browserify");
 var source = require("vinyl-source-stream");
 
 gulp.task("clean", function(callback) {
-    del("dest", callback);
+    del("dist", callback);
 });
 
 gulp.task("html", function() {
-    del("dest/**/*.html");
+    del("dist/**/*.html");
     return gulp.src("src/**/*.html")
-        .pipe(gulp.dest("dest"));
+        .pipe(gulp.dest("dist"));
 });
 
 gulp.task("js", function() {
     return browserify("src/js/script.js")
         .bundle()
         .pipe(source("bundle.js"))
-        .pipe(gulp.dest("dest"));
+        .pipe(gulp.dest("dist"));
 });
 
 gulp.task("css", function() {
-    del("dest/css");
+    del("dist/css");
     return gulp.src("src/css/**/*.css")
-        .pipe(gulp.dest("dest/css"));
+        .pipe(gulp.dest("dist/css"));
 });
 
 gulp.task("build", ["html", "js", "css"]);
