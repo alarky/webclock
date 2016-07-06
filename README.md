@@ -1,1 +1,1 @@
-#[webclock](https://alarky.github.io/weblock)
+#[webclock](https://alarky.github.io/webclock)
