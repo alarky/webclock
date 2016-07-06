@@ -5,27 +5,27 @@ var del = require("del");
 var browserify = require("browserify");
 var source = require("vinyl-source-stream");
 
+var dest = "../webclock.pages";
+
 gulp.task("clean", function(callback) {
-    del("dist", callback);
+    del(dest, callback);
 });
 
 gulp.task("html", function() {
-    del("dist/**/*.html");
     return gulp.src("src/**/*.html")
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest(dest));
 });
 
 gulp.task("js", function() {
     return browserify("src/js/script.js")
         .bundle()
         .pipe(source("bundle.js"))
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest(dest));
 });
 
 gulp.task("css", function() {
-    del("dist/css");
     return gulp.src("src/css/**/*.css")
-        .pipe(gulp.dest("dist/css"));
+        .pipe(gulp.dest(dest));
 });
 
 gulp.task("build", ["html", "js", "css"]);
